@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FiveSlowFingers.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8E1CDC3420BE8BEC00348511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E1CDC4820BE8BEE00348511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E1CDC5320BE8BEE00348511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

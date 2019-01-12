@@ -15,15 +15,28 @@ enum VersionError: Error {
 class MainVC: UIViewController {
     @IBOutlet weak var recordLabel: UILabel!
     
-    var rus = Bool()
+    var rus = Bool()  //check for chosen langauge
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let score = UserDefaults.standard.integer(forKey: "score")
-        if score > 0 {
-            recordLabel.text = "Your best score is: \(score)"
+        loadHighscore()   // load user's highscore
+        checkForUpdate()  // check for application update
+    }
+    
+    func loadHighscore() {
+        var totalScore = String()
+        let scoreEn = UserDefaults.standard.integer(forKey: "scoreen")
+        let scoreRu = UserDefaults.standard.integer(forKey: "scoreru")
+        if scoreRu > 0 || scoreEn > 0 {
+            totalScore += NSLocalizedString("Your best score:\n", comment: "")
         }
-        checkForUpdate()
+        if scoreEn > 0 {
+            totalScore += NSLocalizedString(" Eng: ", comment: "") + "\(scoreEn)"
+        }
+        if scoreRu > 0 {
+            totalScore += NSLocalizedString(" Rus: ", comment: "") + "\(scoreRu)"
+        }
+        recordLabel.text = totalScore
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +67,7 @@ class MainVC: UIViewController {
             }
         }
     }
+    
     
     func isUpdateAvailable(completion: @escaping (Bool?, Error?) -> Void) throws -> URLSessionDataTask {
         guard let info = Bundle.main.infoDictionary,
@@ -87,14 +101,14 @@ class MainVC: UIViewController {
             } else if let update = update {
                 print(update)
                 if update {
-                    let alert = UIAlertController(title: "New Version Found", message: "A new version of this app is available. \nWant to download it now?", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    let alert = UIAlertController(title: NSLocalizedString("New Version Found", comment: ""), message: NSLocalizedString("A new version of this app is available. \nWant to download it now?", comment: ""), preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: { action in
                         if let url = URL(string: "itms-apps://itunes.apple.com/app/id1393657236"),
                             UIApplication.shared.canOpenURL(url){
                             UIApplication.shared.open(url, options: [:], completionHandler: nil)
                         }
                     }))
-                    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
             }

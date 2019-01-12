@@ -11,14 +11,17 @@ import UIKit
 class ResultVC: UIViewController {
     @IBOutlet weak var correctLabel: UILabel!
     @IBOutlet weak var incorrectLabel: UILabel!
-
+    @IBOutlet var shareButton: UIButton!
+    @IBOutlet var backButton: UIButton!
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
 
     var getCorrect = Int()
     var getIncorrect = Int()
-
+    var getLanguage = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         correctLabel.text = "\(getCorrect)"
@@ -38,10 +41,27 @@ class ResultVC: UIViewController {
     }
     
     func saveRecord() {
-        let score = UserDefaults.standard.integer(forKey: "score")
+        let score = UserDefaults.standard.integer(forKey: "score" + getLanguage)
         if getCorrect > score {
-            UserDefaults.standard.set(getCorrect, forKey: "score")
+            UserDefaults.standard.set(getCorrect, forKey: "score" + getLanguage)
         }
     }
-
+    
+    
+    @IBAction func share(_ sender: Any) {
+        shareButton.isHidden = true
+        backButton.isHidden = true
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        var imagesToShare = [AnyObject]()
+        imagesToShare.append(image!)
+        
+        shareButton.isHidden = false
+        backButton.isHidden = false
+        let activityViewController = UIActivityViewController(activityItems: imagesToShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        present(activityViewController, animated: true, completion: nil)
+    }
+    
 }

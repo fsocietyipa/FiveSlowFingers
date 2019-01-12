@@ -1,0 +1,38 @@
+
+/* Class = "UIButton"; normalTitle = "🇬🇧"; ObjectID = "6FY-KC-Wwi"; */
+"6FY-KC-Wwi.normalTitle" = "🇬🇧";
+
+/* Class = "UILabel"; text = "FiveSlowFingers"; ObjectID = "6pM-fr-e1V"; */
+"6pM-fr-e1V.text" = "FiveSlowFingers";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "D6K-9V-Z0v"; */
+"D6K-9V-Z0v.text" = "60";
+
+/* Class = "UIButton"; normalTitle = "🇷🇺"; ObjectID = "Ixd-6B-BiP"; */
+"Ixd-6B-BiP.normalTitle" = "🇷🇺";
+
+/* Class = "UILabel"; text = "Speak:"; ObjectID = "ZHH-eC-cU1"; */
+"ZHH-eC-cU1.text" = "Озвучка:";
+
+/* Class = "UILabel"; text = "Wrong"; ObjectID = "bxL-5v-qpZ"; */
+"bxL-5v-qpZ.text" = "Неправильных";
+
+/* Class = "UILabel"; text = "Choose your side"; ObjectID = "iDg-Lm-Kq7"; */
+"iDg-Lm-Kq7.text" = "Выберите язык";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "kGl-F9-ggq"; */
+"kGl-F9-ggq.text" = "Title";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "qlQ-b0-bCY"; */
+"qlQ-b0-bCY.text" = "0";
+
+/* Class = "UILabel"; text = "© App was created by Valikhanov Okzhetpes and Galaganov  Nikita"; ObjectID = "syn-9G-fgh"; */
+"syn-9G-fgh.text" = "© Приложение разработали Валиханов Окжетпес и Галаганов Никита";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ynf-LA-UTU"; */
+"ynf-LA-UTU.text" = "0";
+
+/* Class = "UILabel"; text = "Correct"; ObjectID = "z6u-Y5-1da"; */
+"z6u-Y5-1da.text" = "Правильных";
+
+

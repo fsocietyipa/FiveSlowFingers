@@ -23,6 +23,7 @@
 		8EE3524320C1E353001D428C /* Bebas-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EE3523E20C1E352001D428C /* Bebas-Bold.ttf */; };
 		8EE3524420C1E353001D428C /* Bebas-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EE3523F20C1E352001D428C /* Bebas-Light.ttf */; };
 		8EE3524520C1E353001D428C /* Bebas-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EE3524020C1E353001D428C /* Bebas-Thin.ttf */; };
+		8EEF9BCE21E9C84200E5E06E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9BCC21E9C84200E5E06E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,10 @@
 		8EE3523E20C1E352001D428C /* Bebas-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bebas-Bold.ttf"; sourceTree = "<group>"; };
 		8EE3523F20C1E352001D428C /* Bebas-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bebas-Light.ttf"; sourceTree = "<group>"; };
 		8EE3524020C1E353001D428C /* Bebas-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bebas-Thin.ttf"; sourceTree = "<group>"; };
+		8EEF9BCA21E9C64500E5E06E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		8EEF9BCB21E9C64600E5E06E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8EEF9BCD21E9C84200E5E06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8EEF9BD021E9C85900E5E06E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 				8E1CDC3C20BE8BEC00348511 /* Main.storyboard */,
 				8EE3523920C1CC99001D428C /* MainVC.swift */,
 				8E1CDC3A20BE8BEC00348511 /* GameVC.swift */,
+				8EEF9BCC21E9C84200E5E06E /* Localizable.strings */,
 				8ED5BD0920BF0B5C008F7E5A /* ResultVC.swift */,
 				8E1CDC3F20BE8BEE00348511 /* Assets.xcassets */,
 				8E1CDC6820BE905600348511 /* SupportingFiles */,
@@ -262,6 +268,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8E1CDC2C20BE8BEC00348511;
 			productRefGroup = 8E1CDC3620BE8BEC00348511 /* Products */;
@@ -282,6 +289,7 @@
 			files = (
 				8EE3523820C1C687001D428C /* rusWords.txt in Resources */,
 				8EE3524420C1E353001D428C /* Bebas-Light.ttf in Resources */,
+				8EEF9BCE21E9C84200E5E06E /* Localizable.strings in Resources */,
 				8EE3524220C1E353001D428C /* Bebas-Regular.ttf in Resources */,
 				8E1CDC6720BE903F00348511 /* enWords.txt in Resources */,
 				8E1CDC4320BE8BEE00348511 /* LaunchScreen.storyboard in Resources */,
@@ -357,6 +365,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8E1CDC3D20BE8BEC00348511 /* Base */,
+				8EEF9BCA21E9C64500E5E06E /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -365,8 +374,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8E1CDC4220BE8BEE00348511 /* Base */,
+				8EEF9BCB21E9C64600E5E06E /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8EEF9BCC21E9C84200E5E06E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EEF9BCD21E9C84200E5E06E /* Base */,
+				8EEF9BD021E9C85900E5E06E /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -436,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

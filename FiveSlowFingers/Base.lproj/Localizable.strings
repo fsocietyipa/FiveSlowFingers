@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  FiveSlowFingers
+
+  Created by fsociety.1 on 1/12/19.
+  Copyright © 2019 fsociety.1. All rights reserved.
+*/
+
+"Your best score:\n" = "Your best score:\n";
+" Eng: " = " Eng: ";
+" Rus: " = " Rus: ";
+"New Version Found" = "New Version Found";
+"A new version of this app is available. \nWant to download it now?" = "A new version of this app is available. \nWant to download it now?";
+"OK" = "OK";
+"Cancel" = "Cancel";

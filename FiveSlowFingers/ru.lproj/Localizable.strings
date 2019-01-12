@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  FiveSlowFingers
+
+  Created by fsociety.1 on 1/12/19.
+  Copyright © 2019 fsociety.1. All rights reserved.
+*/
+"Your best score:\n" = "Лучший результат:\n";
+" Eng: " = " Анг: ";
+" Rus: " = " Рус: ";
+"New Version Found" = "Обновление";
+"A new version of this app is available. \nWant to download it now?" = "Доступна новая версия приложения. \nХотите обновиться?";
+"OK" = "Да";
+"Cancel" = "Отмена";
